@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <title>LOGIN FORM</title>
+  <title>SIGN IN FORM</title>
 </head>
 <body>
   <div class="container">
@@ -15,12 +15,13 @@
       </div>
       <div></div>
     </div>
+
     <div class="right-panel">
       <div class="wrapper">
         <form action="">
-          <h1>LOGIN</h1>
+          <h1>SIGN IN</h1>
           <div class="academic-info">
-            <input class="edu-info" name="date_of_birth" type="date" placeholder="Date of birth" value="" autocomplete="off" id="birthDay">
+            <input class="edu-info" name="date_of_birth" type="date" placeholder="Date of birth" readonly="true" value="" autocomplete="off" id="birthDay">
             <input class="edu-info" name="rollNo" id="rollNo" placeholder="10th Roll No." type="text">
             <select name="tenth_passing_year" class="edu-info">
               <option value="">10th Passing Year</option>
@@ -89,36 +90,35 @@
           </div>
           <div class="user-info">
             <div class="input-box">
-              <input name="mobile_no" type="text" placeholder="Mobile Number" class="numbersonly" id="phone" maxlength="10" value="" autocomplete="off" required>
-              <!-- <input type="text" placeholder="Username" required> -->
+              <input type="text" placeholder="Name" required>
               <box-icon name='user'></box-icon>
             </div>
             <div class="input-box">
-              <input name="email" id="email" type="email" placeholder="Email" maxlength="50" value="" autocomplete="off" required>
-              <!-- <input type="text" placeholder="E-mail" required> -->
+              <input type="text" placeholder="Enter E-mail" required>
               <box-icon name='gmail' type='logo' ></box-icon>
             </div>
             <div class="input-box">
-              <input type="password" placeholder="password" required>
+              <input type="password" placeholder="Enter password" required>
+              <box-icon name='lock'></box-icon>
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Confirm password" required>
               <box-icon name='lock'></box-icon>
             </div>
           </div>
-    
           <div class="remember-forget">
-            <label><input type="checkbox">Remember me</label>
-            <a href="#">Forgot password</a>
+            <label><input type="checkbox">I agree to the terms & conditions.</label>
           </div>
     
-          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn">Register</button>
     
           <div class="register-link">
-            <p>Don't have an account? <a href="/signIn.html">Register</a></p>
+            <p>Already have an account? <a href="/index.html">Login</a></p>
             <p class="help-line">For queries related to Online Registration, please contact at 011-23812955</p>
           </div>
         </form>
       </div>
     </div>
-
   </div>
 </body>
 </html>
