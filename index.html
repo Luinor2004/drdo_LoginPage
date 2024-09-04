@@ -2,12 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Login Page</title>
   </head>
   <body>
-    <div id="app"></div>
+      <div class="container">
+        <div class="left-panel">
+          <div class="logo"><img src="/logo.png" alt=""></div>
+        </div>
+
+        <div class="right-panel">
+            <div class="radio-container">
+              <div class="radio-group">
+                <input type="radio" id="login" name="auth" checked>
+                <label for="login">Login</label>
+              </div>
+
+              <div class="radio-group">
+                <input type="radio" id="register" name="auth">
+                <label for="register">Register</label>
+              </div>
+          </div>
+        </div>
+      </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
