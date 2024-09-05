@@ -108,6 +108,11 @@
     transform: translateY(-50%);
     font-size: 20px;
   }
+  .divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .wrapper .remember-forget {
     display: flex;
